@@ -25,6 +25,22 @@ npm run deploy
 
 Then go to github dashboard UI, "Settings", "Pages", and make sure it shows up.
 
+Also need to update secrets:
+
+upper right avatar -> settings -> developer settings -> personal access tokens
+
+create a new token with repo-specific permissions 
+```
+Read access to metadata
+Read and Write access to actions, administration, code, deployments, issues, merge queues, pages, pull requests, repository hooks, and workflows 
+```
+or reuse an existing token.
+
+Copy the token
+
+then go to the repo -> settings -> secrets -> actions secrets and create a new secret called "ACTIONS_DAT" and paste in the generated value.
+
+
 ## research
 
 https://stackoverflow.com/questions/72740796/fatal-could-not-read-password-for-https-github-com-no-such-device-or-a
