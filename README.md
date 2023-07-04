@@ -85,6 +85,8 @@ https://stackoverflow.com/questions/66808918/content-security-policy-meta-tag-wi
 
 Refused to load <asset/*.js> because it appears in neither the script-src directive nor the default-src directive of the Content Security Policy.
 
+Filed here: https://github.com/JammerCore/JammerCore/issues/2234
+
 workaround: vite config to export a single fat html. https://github.com/vitejs/vite/issues/621
 
 
