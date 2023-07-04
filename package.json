@@ -9,7 +9,8 @@
     "package": "git pull && git rebase origin/main && tsc && vite build && rm dist.zip && cd dist && zip -r ../dist.zip . && git add . && git commit -nam 'update' && git push -f",
     "preview": "vite preview",
     "test": "vitest",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "deploy": "gh-pages -d dist",
   },
   "dependencies": {
     "classnames": "2.3.2",
