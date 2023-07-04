@@ -40,6 +40,8 @@ Copy the token
 
 then go to the repo -> settings -> secrets -> actions secrets and create a new secret called "ACTIONS_DAT" and paste in the generated value.
 
+Go to github actions and view the logs. if you see "403" permission not granted, you didn't paste it in right, or you didn't give it all the permissions (check "code" especially).
+
 
 ## research
 
