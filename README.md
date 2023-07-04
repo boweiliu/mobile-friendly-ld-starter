@@ -11,6 +11,21 @@ This setup includes:
 
 # deployment info
 
+Don't forget to update "homepage" in package.json!!
+
+You should be able to just clone this and github actions + pages should do the rest.
+
+However on first build you need to bootstrap:
+
+```
+npm i
+npm run build
+npm run deploy
+```
+
+Then go to github dashboard UI, "Settings", "Pages", and make sure it shows up.
+
+## research
 
 https://stackoverflow.com/questions/72740796/fatal-could-not-read-password-for-https-github-com-no-such-device-or-a
 
