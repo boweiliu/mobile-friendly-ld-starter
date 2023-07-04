@@ -2,6 +2,11 @@ import { Link } from 'react-router-dom';
 
 function NotFound() {
   const origin = window.location.origin || 'http://localhost:5173';
+  const href = window.location.href || `${origin}/index.html`;
+  const url = new URL(href);
+  url.hash = '';
+  const hrefMinusHash = url.href;
+
 
   return (
     <>
@@ -18,7 +23,7 @@ function NotFound() {
         }}
         sandbox="allow-scripts allow-pointer-lock"
         allowFullScreen
-        src={`${origin}/index.html`}
+        src={hrefMinusHash}
       />
       <div style={{ height: '533px' }}>spacer</div>
       <h2>blah blah</h2>
