@@ -1,7 +1,7 @@
 {
   "name": "react-ts-app",
   "private": true,
-  "homepage": "/deckbuilder-trigger-sandbox",
+  "homepage": "/mobile-friendly-ld-starter", 
   "version": "0.0.0",
   "type": "module",
   "scripts": {
