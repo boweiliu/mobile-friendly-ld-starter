@@ -7,7 +7,6 @@ function NotFound() {
   url.hash = '';
   const hrefMinusHash = url.href;
 
-
   return (
     <>
       <h1>Not Found</h1>

@@ -7,7 +7,6 @@ import { PauseMenu } from '@/screens/PauseMenu';
 import styles from './GameScreenSelect.module.css';
 import { FullscreenContext } from '@/hooks/useFullscreen';
 
-
 const defaultScreenStateAfterRotationCheck = 'play';
 
 export function GameScreenSelect(props: {
@@ -23,7 +22,10 @@ export function GameScreenSelect(props: {
   return (
     <>
       {screenState === 'rotationCheck' ? (
-        <RotationCheck {...props} onStart={() => setScreenState(defaultScreenStateAfterRotationCheck)} />
+        <RotationCheck
+          {...props}
+          onStart={() => setScreenState(defaultScreenStateAfterRotationCheck)}
+        />
       ) : null}
 
       {screenState !== 'rotationCheck' ? (
